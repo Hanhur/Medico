@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Red+Hat+Text:wght@400;500&family=Reem+Kufi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Medico</title>
 </head>
@@ -14,7 +15,7 @@
     <header class="header">
         <div class="container">
             <div class="header_inner">
-                <a class="header_link" href="#">
+                <a class="header_link" href="./index.html">
                     <img class="header_img" src="./images/logo.svg" alt="">
                 </a>
                 <ul class="header_item">
@@ -40,7 +41,7 @@
             </div>
             <h1 class="header-title">Take qualified dental team service</h1>
             <p class="header-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
             </p>
             <button class="header-btn" type="submit">Appointment Now</button>
@@ -74,7 +75,7 @@
                     <div class="medico_inner-content">
                         <h2 class="medico-title">Medico is the region's largest healthcare network</h2>
                         <p class="medico-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
                         </p>
                         <button class="medico-btn" type="submit">Explor Now</button>
@@ -82,13 +83,13 @@
                 </div>
             </div>
         </section>
-        <section class="section-doctots">
+        <section class="section-doctors">
             <div class="container">
                 <div class="doctors_inner">
                     <div class="doctors-content">
                         <h2 class="doctors-title">Our highly qualified Doctors</h2>
                         <p class="doctors-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
                         </p>
                         <div class="doctors-social">
@@ -106,10 +107,201 @@
                     </div>
                     <img src="./images/medium-doctor.jpg" alt="" width="471">
                 </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/medium-shot-doctor.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Kevin Martin</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/portrait-doctor.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Jesmin Akther</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/optical-doctor.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Sarah Albert</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/doctor-work.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Retha Khan</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/medium-shot-doctor.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Kevin Martin</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/portrait-doctor.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Jesmin Akther</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/optical-doctor.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Sarah Albert</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swipper-doctors" src="./images/doctor-work.jpg" alt="" width="298">
+                            <h3 class="swipper-doctors_title"><span>Dr:</span> Retha Khan</h3>
+                            <p class="swipper-doctors_text">Dental</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-appointment">
+            <div class="container">
+                <div class="appointment-inner">
+                    <img class="appointment-img" src="./images/specialist-procedure.jpg" alt="" width="600">
+                    <div class="appointment-box">
+                        <h2 class="appointment-title">Appointment create for your treatment</h2>
+                        <form class="appointment-form">
+                            <div class="appointment-form_items">
+                                <input class="appointment-input" type="text" placeholder="Select Department">
+                                <input class="appointment-input" type="text" placeholder="Your Full Name">
+                                <input class="appointment-input" type="text" placeholder="Select Date">
+                            </div>
+                            <div class="appointment-form_items">
+                                <input class="appointment-input" type="text" placeholder="Select Doctor">
+                                <input class="appointment-input" type="text" placeholder="Your Phone Number">
+                                <input class="appointment-input" type="text" placeholder="Select Time">
+                            </div>
+                        </form>
+                        <button class="appointment-btn" type="submit">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-patients">
+            <div class="container">
+                <h2 class="patients-title">Our patients says</h2>
+                <div class="patients-inner">
+                    <img class="patients-img" src="./images/frame.svg" alt="">
+                    <img class="patients-img" src="./images/frame.svg" alt="">
+                    <img class="patients-img" src="./images/frame.svg" alt="">
+                    <img class="patients-img" src="./images/frame.svg" alt="">
+                    <img class="patients-img" src="./images/frame-2.svg" alt="">
+                </div>                 
+                <p class="patients-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged.
+                </p>
+                <div class="swiper patinents-slider">
+                    <div class="swiper-wrapper">
+                        <div class="patients-slider_item">
+                            <img src="./images/ellipse-1.png" alt="" width="80">
+                        </div>
+                        <div class="patients-slider_item">
+                            <img src="./images/ellipse-2.png" alt="" width="80">
+                        </div>
+                        <div class="patients-slider_item">
+                            <img src="./images/ellipse-3.png" alt="" width="80">
+                        </div>
+                        <div class="patients-slider_item">
+                            <img src="./images/ellipse-4.png" alt="" width="80">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-our">
+            <div class="container">
+                <div class="our-inner">
+                    <div class="our-inner_box">
+                        <h2 class="our-title">Our latest blog news</h2>
+                        <p class="our-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type 
+                            specimen book. It has survived not only five centuries, but also the leap into 
+                            electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <form class="our-form" action="#" >
+                            <input class="our-input" type="email" placeholder="Inter email address">
+                            <button class="our-btn" type="submit">Subscribe</button>      
+                        </form>
+                    </div>
+                    <img src="./images/senior-dentist-office-woman.png" alt="" width="582">
+                </div>
             </div>
         </section>
     </main>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-medico">
+                    <a href="./index.html">
+                        <img class="footer-medico_logo" src="./images/footer-logo.svg" alt="">
+                    </a>       
+                    <p class="footer-medico_text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since...
+                    </p>
+                </div>
+                <div class="usefull">
+                    <h2 class="usefull-title">Usefull Link</h2>
+                    <ul class="usefull-list">
+                        <li class="usefull-item">
+                            <a class="usefull-link" href="#">About Us</a>
+                        </li>
+                        <li class="usefull-item">
+                            <a class="usefull-link" href="#">Doctors</a>
+                        </li>
+                        <li class="usefull-item">
+                            <a class="usefull-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="usefull-item">
+                            <a class="usefull-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <h2 class="more-title">More</h2>
+                    <ul class="more-list">
+                        <li class="more-item">
+                            <a class="more-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="more-item">
+                            <a class="more-link" href="#">Service</a>
+                        </li>
+                        <li class="more-item">
+                            <a class="more-link" href="#">Documentations</a>
+                        </li>
+                        <li class="more-item">
+                            <a class="more-link" href="#">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2 class="contact-title">Contact Ua</h2>
+                    <a class="contact-email" href="mailto:oyasim@email.com">Email: oyasim@email.com</a>
+                    <div class="footer-social">
+                        <a class="footer-social_icon" href="#">
+                            <img class="footer-social_img" src="./images/footerfacebook.svg" alt="Facebook">
+                        </a>
+                        <a class="footer-social_icon" href="#">
+                            <img class="footer-social_img" src="./images/footertwitter.svg" alt="Twitter">
+                        </a>
+                        <a class="footer-social_icon" href="#">
+                            <img class="footer-social_img" src="./images/footerinstagram.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
