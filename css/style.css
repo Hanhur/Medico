@@ -284,17 +284,32 @@ body
 .appointment-form_items
 {
     margin-right: 24px;
+    position: relative;
+}
+.appointment-form_items::after 
+{
+    content: '';
+    position: absolute;
+    background-image: url(../images/down.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: 255px;
+}
+.appointment-form_items input 
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    width: 283px;
 }
 .appointment-input
 {
-    padding: 10px 20px;
+    padding: 10px 97px 10px 20px;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
     display: block;
-    width: 283px;
-    height: 1px;
     margin-bottom: 40px;
 }
+
 .appointment-input::placeholder 
 {
     font-family: 'Red Hat Text', sans-serif;
@@ -340,7 +355,7 @@ body
     margin: 0 auto;
     margin-bottom: 60px;
 }
-.swiper-wrapper
+.patients-images
 {
     display: flex;
     justify-content: center;
