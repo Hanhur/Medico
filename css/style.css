@@ -585,6 +585,14 @@ body
 
 @media (max-width: 820px)
 {
+    .patients-title
+    {
+        font-size: 50px;
+    }
+    .patients-text
+    {
+        width: 100%;
+    }
     .footer-inner
     {
         gap: 0 100px;
@@ -618,6 +626,28 @@ body
 
 @media (max-width: 515px)
 {
+    .patients-inner
+    {
+        margin-bottom: 35px;
+    }
+    .patients-title
+    {
+        font-size: 30px;
+    }
+    .patients-text
+    {
+        font-size: 15px;
+    }
+    .patients-images
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 30px;
+    }
+    .patients-images_img
+    {
+        margin-bottom: 20px;
+    }
     .our-title
     {
         font-size: 30px;
