@@ -476,8 +476,53 @@ body
 }
 
 /* ========================= Madia =========================== */
+@media (max-width: 1320px)
+{
+    .appointment-inner
+    {
+        display: flex;
+    }
+    .appointment-img
+    {
+        margin-right: 35px;
+        width: 100%;
+    }
+    .appointment-title
+    {
+        font-size: 65px;
+    }
+}
+
 @media (max-width: 1260px)
 {
+    .appointment-inner
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
+    }
+    .appointment-img
+    {
+        width: 500px;
+    }
+    .appointment-title
+    {
+        width: 560px;
+        font-size: 55px;
+    }
+    .appointment-form_items input 
+    {
+        width: 260px;
+    }
+    .appointment-input
+    {
+        padding: 10px 75px 10px 20px;
+        margin-bottom: 30px;
+    }
+    .appointment-form_items::after
+    {
+        left: 230px;
+    }
     .our-inner 
     {
         display: flex;
@@ -509,6 +554,59 @@ body
 
 @media (max-width: 1100px)
 {
+    .section-appointment
+    {
+        margin-bottom: 80px;
+    }
+    .appointment-inner
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .appointment-box
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .appointment-img
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .appointment-title
+    {
+        width: 100%;
+    }
+    .appointment-form_items::after 
+    {
+        left: 255px;
+    }
+    .appointment-form_items input 
+    {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+        width: 283px;
+    }
+    .appointment-input
+    {
+        padding: 10px 97px 10px 20px;
+        border: none;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .appointment-input::placeholder 
+    {
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #999;
+    }
     .our-title
     {
         text-align: center;
@@ -601,6 +699,27 @@ body
 
 @media (max-width: 700px)
 {
+    .appointment-title
+    {
+        font-size: 50px;
+    }
+    .appointment-form
+    {
+        margin-bottom: 35px;
+    }
+    .appointment-form_items input 
+    {
+        width: 260px;
+    }
+    .appointment-input
+    {
+        padding: 10px 75px 10px 20px;
+        margin-bottom: 30px;
+    }
+    .appointment-form_items::after
+    {
+        left: 230px;
+    }
     .our-input
     {
         padding: 16px 300px 16px 32px;
@@ -624,8 +743,52 @@ body
     }
 }
 
+@media (max-width: 630px)
+{
+    .appointment-title
+    {
+        font-size: 30px;
+    }
+    .appointment-form
+    {
+        margin-bottom: 35px;
+    }
+    .appointment-form_items input 
+    {
+        width: 220px;
+    }
+    .appointment-input
+    {
+        padding: 10px 30px 10px 20px;
+        margin-bottom: 30px;
+    }
+    .appointment-form_items::after
+    {
+        left: 190px;
+    }
+    .appointment-input::placeholder 
+    {
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #999;
+    }
+}
+
 @media (max-width: 515px)
 {
+    .appointment-form
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .appointment-form_items
+    {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
     .patients-inner
     {
         margin-bottom: 35px;
@@ -633,6 +796,7 @@ body
     .patients-title
     {
         font-size: 30px;
+        padding-top: 0;
     }
     .patients-text
     {
