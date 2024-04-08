@@ -47,6 +47,9 @@ body
     --White-color: #FFFFFF;
     --Blue-color: #1D79E4;
     --Black-color: #222222;
+    --color-cornflower: #E7E9FC;
+    --color-modal:#FCFCFC;
+    --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container
 {
@@ -61,7 +64,7 @@ body
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    width: 100%;
 }
 .header_inner
 {
@@ -107,6 +110,81 @@ body
     width: 217px;
     color: var(--White-color);
     background: var(--Blue-color);
+    margin-bottom: 100px;
+}
+
+/*-------------------------------Modal window------------------------*/
+.backdrop
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.7);
+    transition-property: opacity, variable;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    z-index: 5;
+}
+.is-hidden
+{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.modal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 576px;
+    width: 408px;
+    background: var(--color-modal);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 24px;
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+}
+.backdrop.is-hidden .modal
+{
+    transform: translate(-50%, -50%) scale(0);
+}
+.close-black-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-icon
+{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    color: var(--Black-color);
+    cursor: pointer;
+}
+.modal-menu
+{
+    z-index: 10;
+}
+.modal-menu_list
+{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.modal-menu_link
+{
+    color: var(--Black-color);
 }
 /* =========================== Section-Procedures =============================== */
 .section-procedures
@@ -478,6 +556,10 @@ body
 /* ========================= Madia =========================== */
 @media (max-width: 1320px)
 {
+    .header-title
+    {
+        font-size: 80px;
+    }
     .medico-img
     {
         margin-right: 80px;
@@ -499,6 +581,10 @@ body
 
 @media (max-width: 1260px)
 {
+    .header-title
+    {
+        font-size: 55px;
+    }
     .medico-title
     {
         width: 100%;
@@ -571,6 +657,10 @@ body
 
 @media (max-width: 1100px)
 {
+    .header
+    {
+        margin-bottom: 100px;
+    }
     .section-procedures
     {
         padding: 0;
@@ -768,6 +858,39 @@ body
 
 @media (max-width: 820px)
 {
+    .header_inner
+    {
+        justify-content: space-evenly;
+    }
+    .header_item
+    {
+        visibility: hidden;
+    }
+    .header-box
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-title
+    {
+        text-align: center;
+        width: 550px;
+    }
+    .header-text
+    {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .header-btn
+    {
+        margin-bottom: 100px;
+    }
+    .header_item
+    {
+        gap: 0;
+    }
     .patients-title
     {
         font-size: 50px;
@@ -785,6 +908,10 @@ body
 
 @media (max-width: 700px)
 {
+    .header_inner
+    {
+        margin-bottom: 50px;
+    }
     .appointment-title
     {
         font-size: 50px;
@@ -831,11 +958,28 @@ body
 
 @media (max-width: 630px)
 {
-    .doctors-title
+    .header_inner
+    {
+        padding-top: 35px;
+        margin-bottom: 35px;
+    }
+    .header-title
+    {
+        font-size: 45px;
+        width: 450px;
+    }
+    .header-btn
+    {
+        margin-bottom: 50px;
+    }
+    .doctors-title,
+    .medico-title
     {
         font-size: 30px;
     }
-    .doctors-text
+    .header-text,
+    .doctors-text,
+    .medico-text
     {
         font-size: 15px;
         width: 100%;
@@ -873,6 +1017,30 @@ body
 
 @media (max-width: 515px)
 {
+    .header_inner
+    {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .header_item
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-title
+    {
+        font-size: 30px;
+        width: 100%;
+    }
+    .modal
+    {
+        width: 300px;
+        height: 450px;
+    }
+    .modal-menu_list
+    {
+        font-size: 25px;
+    }
     .section-medico
     {
         margin-bottom: 50px;

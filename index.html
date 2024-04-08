@@ -12,7 +12,7 @@
     <title>Medico</title>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header_inner">
                 <a class="header_link" href="./index.html">
@@ -35,18 +35,45 @@
                         <a class="header_list-link" href="#">Blog</a>
                     </li>
                 </ul>
-                <a class="header_burger" href="#">
+                <button class="header_burger" type="button" data-modal-open>
                     <img class="header_burger-img" src="./images/burger.svg" alt="">
-                </a>
+                </button>
             </div>
-            <h1 class="header-title">Take qualified dental team service</h1>
-            <p class="header-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-            </p>
-            <button class="header-btn" type="submit">Appointment Now</button>
+            <div class="header-box">
+                <h1 class="header-title">Take qualified dental team service</h1>
+                <p class="header-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                </p>
+                <button class="header-btn" type="submit">Appointment Now</button>
+            </div>
         </div>
-    </header>-->
+        <!-- Modal Window -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-black-button" type="button" data-modal-close>
+                    <img class="close-icon" src="./images/close.svg" alt="" width="8" height="8">
+                </button>
+                <ul class="modal-menu">
+                    <li class="modal-menu_list">
+                        <a class="modal-menut-link" href="#">Home</a>
+                    </li>
+                    <li class="modal-menu_list">
+                        <a class="modal-menu-link" href="#">About Us</a>
+                    </li>
+                    <li class="modal-menu_list">
+                        <a class="modal-menu-link" href="#">Doctors</a>
+                    </li>
+                    <li class="modal-menu_list">
+                        <a class="modal-menu-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="modal-menu_list">
+                        <a class="modal-menu-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main class="main">
         <section class="section-procedures">
             <div class="container">
@@ -290,6 +317,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
