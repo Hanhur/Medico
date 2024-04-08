@@ -118,6 +118,7 @@ body
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
 }
 .procedures-number
 {
@@ -570,6 +571,27 @@ body
 
 @media (max-width: 1100px)
 {
+    .section-procedures
+    {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .procedures-item
+    {
+        justify-content: center;
+    }
+    .procedures-list 
+    {
+        margin-bottom: 50px;
+    }
+    .procedures-number
+    {
+        font-size: 55px;
+    }
+    .procedures-text
+    {
+        font-size: 18px;
+    }
     .section-medico
     {
         margin-bottom: 100px;
